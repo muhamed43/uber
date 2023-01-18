@@ -1,0 +1,69 @@
+.choice {
+  position: relative;
+  &__bg-black {
+    padding-top: 55px;
+    min-height: 499px;
+    background: #070716;
+  }
+  &__btn {
+    margin-bottom: 26px;
+    color: #070716;
+    background-color: white;
+  }
+  &__title {
+    color: white;
+  }
+  &__subtitle {
+    margin-bottom: 54px;
+    color: white;
+  }
+  &__img {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+  }
+  &__bg-white {
+    background-image: url("../image/bg_car_white.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 397px;
+  }
+  &__text {
+    position: absolute;
+    left: 35%;
+    bottom: 143px;
+  }
+  &__title fz-38 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .choice {
+    &__title fz-38 {
+      justify-content: center;
+    }
+    &__img {
+      position: absolute;
+      width: 465px;
+      left: 0%;
+      top: 35%;
+    }
+    &__text fz-17 {
+      display: none;
+    }
+    &__bg-white {
+      display: none;
+    }
+  }
+}
